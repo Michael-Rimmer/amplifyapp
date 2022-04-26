@@ -6,8 +6,8 @@ import '@aws-amplify/ui-react/styles.css';
 
 function App() {
   return (
-    <Authenticator>             // this code is in the frontend code but links to the backend?   
-      {({ signOut, user }) => ( // what is this structure? how does authenticator make these variables available?
+    <Authenticator>             
+      {({ signOut, user }) => ( // what is this structure? how does authenticator make these variables available? // this code is in the frontend code but links to the backend?   
         <div className="App"> 
           <p>
             Hey {user.username}, welcome to my channel, with auth!
